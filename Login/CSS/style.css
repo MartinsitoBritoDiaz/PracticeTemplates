@@ -1,0 +1,115 @@
+:root{
+    --Bole: #6A3E37;
+    --Turquoise: #29E7CD;
+    --Isabelline: #F4EBE8;
+    --Tufts-Blue: #3993DD;
+    --Pink-Lavender: hsl(313, 46%, 78%);
+    --Grullo: #A89B8C;
+
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+
+
+    --Primary-Font: 'Lexend Deca';
+    --Secodary-Font: 'Big Shoulders Display';
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: var(--Turquoise);
+    font-family: 'Lexend Deca', Tahoma, sans-serif;
+
+    background-image: url(/img/bg-pattern-top.svg), url(/img/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+
+}
+
+.container{ 
+    min-height: 97vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin:  0rem;
+}
+
+.card{
+    width: 35rem;
+    height: 35rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border-radius:  2rem;
+    background-color: white;
+}
+
+.card-header{
+    font-size: 2rem;
+    margin: 0rem;
+    text-transform: uppercase;
+}
+
+.card-body-input {
+    position: relative;
+}
+
+.input{
+    margin: 0rem;
+    padding: 0.5rem 5rem;
+    border-radius: 2rem;
+    text-align: left;
+    color: black;
+
+    border: 0.1rem solid var(--Grullo);
+}
+
+.card-body-input:nth-child(1){
+    margin-bottom: 2rem;    
+}
+
+.card-body-placeholder{
+    position: absolute;
+    top: -1rem;
+    left: 20px;
+    background-color: white;
+    padding: 0 10px;
+
+    font-size: 1.5rem;
+
+}
+ 
+/* .input:focus:nth-child(1) ~ .card-body-placeholder:nth-child(1) {
+    display: none;
+} */
+
+/*TODO: Evaluar el placeholder arriba del campo*/
+
+.card-footer-button{
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--Grullo);
+}
+
+.card-footer-button:hover{
+    border: 0.2rem solid var(--Turquoise);
+    background-color: white;
+    color: black;
+}
